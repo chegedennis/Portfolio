@@ -1,0 +1,489 @@
+:root {
+  --yellow: #f9ca24;
+}
+
+body {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  background: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+header {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 20rem;
+  height: 100%;
+  background: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .user {
+  text-align: center;
+}
+
+header .user h2, header .user h4 {
+  margin-bottom: 0;
+  margin-top: .4rem;
+}
+
+header .user .user-links ul {
+  list-style: none;
+}
+
+header .user .user-links ul li a {
+  background: #383838;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.5rem;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+}
+
+header .user .user-links ul li a:hover {
+  background: var(--yellow);
+}
+
+main {
+  padding: 1rem;
+  padding-left: 22rem;
+}
+
+main .menu {
+  width: 2rem;
+  height: 2rem;
+  background: #333;
+  top: 1rem;
+  right: 1rem;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: .5rem;
+  padding-bottom: .2rem;
+  border-radius: .5rem;
+  display: none;
+}
+
+main .menu .line {
+  color: #fff;
+  background: #fff;
+  width: 60%;
+  height: .05rem;
+  margin: .2rem;
+  padding: .08rem;
+  border-radius: .2rem;
+}
+
+main .menu:hover {
+  background: #666;
+  cursor: pointer;
+}
+
+main .menuClose {
+  width: 2rem;
+  height: 2rem;
+  background: #333;
+  top: 1rem;
+  right: 1rem;
+  position: fixed;
+  text-align: center;
+  padding: .5rem;
+  border-radius: .2rem;
+  display: none;
+}
+
+main .menuClose .close {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+main .menuClose:hover {
+  background: #666;
+  cursor: pointer;
+}
+
+main .page {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+main #home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10rem;
+}
+
+main #home h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+main #home h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+main #home h1 span {
+  color: var(--yellow);
+}
+
+main #home p {
+  font-size: 1.2rem;
+}
+
+main #home p a {
+  text-decoration: none;
+  color: yellow;
+}
+
+main #home button {
+  width: 30%;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background: green;
+  padding: .5rem;
+}
+
+main #home button:hover {
+  background: var(--yellow);
+}
+
+main #home button a {
+  text-decoration: none;
+  color: #eee;
+}
+
+main #about .about-head {
+  text-align: center;
+}
+
+main #about .about-head h2 {
+  color: var(--yellow);
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+main #about .about-head h2 span {
+  color: #fff;
+}
+
+main #about .about-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+main #about .about-user .info {
+  font-size: 1.5rem;
+}
+
+main #about .about-user .info button {
+  width: 50%;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background: green;
+  padding: .5rem;
+}
+
+main #about .about-user .info button:hover {
+  background: yellowgreen;
+}
+
+main #about .about-user .info button a {
+  text-decoration: none;
+  color: #eee;
+}
+
+main #about .about-user .board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #about .about-user .board button {
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  margin: 1rem;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+main #about .about-user .board button span {
+  color: var(--yellow);
+}
+
+main #education .education-head {
+  text-align: center;
+}
+
+main #education .education-head h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+main #education .education-head h2 span {
+  color: var(--yellow);
+}
+
+main #education .education-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 1rem;
+}
+
+main #education .education-container .container {
+  width: 20rem;
+  background: #222;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+main #education .education-container .container h3 {
+  margin-bottom: 0;
+}
+
+main #education .education-container .container p {
+  font-size: 1.1rem;
+}
+
+main #education .education-container .container button {
+  width: 40%;
+  padding: .5rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background: #5e7a5e;
+}
+
+main #portfolio .portfolio-head {
+  text-align: center;
+}
+
+main #portfolio .portfolio-head h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+main #portfolio .portfolio-head h2 span {
+  color: var(--yellow);
+}
+
+main #portfolio .portfolio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 1rem;
+}
+
+main #portfolio .portfolio-container .container {
+  width: 20rem;
+  background: #222;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+main #portfolio .portfolio-container .container p {
+  font-size: 1.1rem;
+}
+
+main #contact .contact-head {
+  text-align: center;
+}
+
+main #contact .contact-head h2 {
+  color: var(--yellow);
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+main #contact .contact-head h2 span {
+  color: #fff;
+}
+
+main #contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+main #contact .contact-container .contact-info {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+main #contact .contact-container .contact-me {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+main #contact .contact-container .contact-me .contact {
+  width: 24rem;
+}
+
+main #contact .contact-container .contact-me .contact input {
+  background: #222;
+  margin: .5rem;
+  padding: .8rem;
+  border-radius: .5rem;
+  width: 80%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+main #contact .contact-container .contact-me .contact #submit {
+  width: 26%;
+  background: #079c07;
+  border-radius: 1.8rem;
+}
+
+main #contact .contact-container .contact-me .contact #submit:hover {
+  background: yellowgreen;
+  cursor: pointer;
+}
+
+main #contact .contact-container .contact-me .contact textarea {
+  background: #222;
+  margin: .5rem;
+  width: 80%;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 1rem;
+    padding-left: 22rem;
+  }
+  main .menu {
+    display: none;
+  }
+  main .menuClose {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    display: none;
+  }
+  main {
+    padding: 0;
+  }
+  main .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    display: none;
+  }
+  main {
+    padding: 0;
+  }
+  main .menu {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
