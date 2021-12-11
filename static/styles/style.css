@@ -361,9 +361,14 @@ main #portfolio .portfolio-container {
   padding-left: 1rem;
 }
 
+main #portfolio .portfolio-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
 main #portfolio .portfolio-container .container {
   width: 20rem;
-  background: #222;
+  height: 20rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
@@ -371,6 +376,16 @@ main #portfolio .portfolio-container .container {
 
 main #portfolio .portfolio-container .container p {
   font-size: 1.1rem;
+}
+
+main #portfolio .portfolio-container .container img {
+  width: 20rem;
+}
+
+main #portfolio .portfolio-container #currency {
+  background: url(../currency.png);
+  background-position: center;
+  background-size: cover;
 }
 
 main #contact .contact-head {

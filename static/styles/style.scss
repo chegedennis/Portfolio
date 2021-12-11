@@ -306,9 +306,14 @@ main{
             flex-wrap: wrap;
             padding: 1rem 0;
             padding-left: 1rem;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
             .container{
                 width: 20rem;
-                background: #222;
+                height: 20rem;
+                // background: #222;
                 padding: 1rem;
                 margin: 1rem;
                 border-radius: 1rem;
@@ -318,6 +323,22 @@ main{
                     font-size: 1.1rem;
                 }
 
+                img{
+                    width: 20rem;
+                }
+
+
+            }
+            #currency{
+                background: url(../currency.png);
+                background-position: center;
+                background-size: cover;
+            }
+            #portal{
+                // background: url(../portal.png);
+                // background-repeat: no-repeat;
+                // background-attachment: fixed;
+                // background-position: center;       
             }
         }
     }
